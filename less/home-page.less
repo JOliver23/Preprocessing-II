@@ -1,61 +1,114 @@
+.intro {
+  @media @mobile {
+    margin: 0 2rem;
+  }
+
+  .flex();
+  max-width: 800px; 
+  margin: 0 auto 1.875rem auto;
+  border-bottom: 2px dashed @navigation-border;
+
+  img {
+    margin-bottom: 1.875rem;
+  }//img
+}//intro
+
 .home {
 
+  @media @mobile {
+    margin: 0 2rem;
+  }
+
   .content-section {
-    margin: 30px 0;
+    margin: 1.875rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      flex-flow: column wrap;
+      justify-content: center;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media @mobile {
+      width:90%;
+      }
     }
+    
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width:90%;
+        padding-left: 0;
+        border-bottom: 2px dashed @navigation-border;
+      }
+
       img {
         border-radius: 10px;
-      }
-    }
-  }
+      }//img
+    }//img-content
+  }//content-section
 
   .inverse-content {
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-flow: column-reverse wrap;
+      justify-content: center;
+      border-bottom: none;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+    }//txt-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+
+      @media @mobile {
+        max-width: auto;
+        padding-bottom: 1.5rem;
+      }
+    }//img-content
+  }//inverse-content
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto 1.875rem;
+
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto 1.875rem 0;
+    }
 
     img {
       border-radius: 10px;
-    }
-  }
+    }//img
+  }//content-destination
 
   .content-pick {
-    padding-top: 30px;
+    padding-top: 1.875rem;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
-    }
-  }
+      margin-bottom: 1.875rem;
+
+      .btn{
+        .button();
+      }
+    }//destination
+  }//content-pick
 }// home
