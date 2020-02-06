@@ -1,12 +1,13 @@
 .intro {
-  @media @mobile {
-    margin: 0 2rem;
-  }
-
   .flex();
   max-width: 800px; 
   margin: 0 auto 1.875rem auto;
   border-bottom: 2px dashed @navigation-border;
+  
+  @media @mobile {
+    margin: 0 2rem;
+  }
+
 
   img {
     margin-bottom: 1.875rem;
@@ -102,12 +103,30 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-flow: column wrap;
+
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 1.875rem;
 
+      @media @mobile {
+        width: 75%;
+        margin: 0 auto;
+      }
+
       .btn{
         .button();
+
+        @media @mobile {
+          width:100%;
+        }
+
+        &:hover {
+          .animation(slide, 1s);
+        }
       }
     }//destination
   }//content-pick

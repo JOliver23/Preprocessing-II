@@ -20,3 +20,28 @@
     padding: 1rem;
     text-align: center;
 }
+
+.animation () {
+    @-webkit-keyframes slide {
+        0% {
+          -webkit-transform: translateZ(0) translateY(0);
+                  transform: translateZ(0) translateY(0);
+        }
+        100% {
+          -webkit-transform: translateZ(-400px) translateY(-200px);
+                  transform: translateZ(-400px) translateY(-200px);
+        }
+      }
+
+      @keyframes slide {
+        0% {
+          -webkit-transform: translateZ(0) translateY(0);
+                  transform: translateZ(0) translateY(0);
+        }
+        100% {
+          -webkit-transform: translateZ(-400px) translateY(-200px);
+                  transform: translateZ(-400px) translateY(-200px);
+        }
+      }
+      
+}
