@@ -136,6 +136,12 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    max-width: 500px;
+  }
+}
 h1,
 h2,
 h3,
@@ -179,6 +185,7 @@ div.nav-head {
 }
 @media (max-width: 500px) {
   div.nav-head {
+    max-width: 500px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
