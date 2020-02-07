@@ -335,6 +335,8 @@ div.nav-head nav a {
 @media (max-width: 500px) {
   .home .content-pick {
     flex-flow: column wrap;
+    justify-content: center;
+    margin-left: -5rem;
   }
 }
 .home .content-pick .destination {
@@ -350,7 +352,7 @@ div.nav-head nav a {
 .home .content-pick .destination .btn {
   color: white;
   font-size: 2rem;
-  background: #054e32;
+  background: #1D8080;
   border-radius: 10px;
   width: 85%;
   padding: 1rem;
@@ -359,5 +361,7 @@ div.nav-head nav a {
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
+    margin-bottom: 1.8rem;
+    background: #25A2B8;
   }
 }
