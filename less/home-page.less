@@ -129,7 +129,14 @@
 
       }//button
       .btn:hover {
-        .hover(#1D8080, 100%)
+        //.hover(#1D8080, 100%)
+        .keyframes(color-fade;{
+          0% { background: rgb(35, 157, 179); }
+          100% { background: rgb(60, 255, 0); 
+                  color: black;}
+          });
+      
+        .animation(color-fade 1s linear infinite alternate)
       }
     }//destination
   }//content-pick

@@ -366,7 +366,34 @@ div.nav-head nav a {
   }
 }
 .home .content-pick .destination .btn:hover {
-  color: #1D8080;
-  background: black;
-  border-radius: 100%;
+  -webkit-animation: color-fade 1s linear infinite alternate;
+  -moz-animation: color-fade 1s linear infinite alternate;
+  animation: color-fade 1s linear infinite alternate;
+}
+@-moz-keyframes color-fade {
+  0% {
+    background: #239db3;
+  }
+  100% {
+    background: #3cff00;
+    color: black;
+  }
+}
+@-webkit-keyframes color-fade {
+  0% {
+    background: #239db3;
+  }
+  100% {
+    background: #3cff00;
+    color: black;
+  }
+}
+@keyframes color-fade {
+  0% {
+    background: #239db3;
+  }
+  100% {
+    background: #3cff00;
+    color: black;
+  }
 }
