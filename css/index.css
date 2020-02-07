@@ -365,3 +365,8 @@ div.nav-head nav a {
     background: #25A2B8;
   }
 }
+.home .content-pick .destination .btn:hover {
+  color: #1D8080;
+  background: black;
+  border-radius: 100%;
+}
