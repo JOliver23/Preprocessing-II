@@ -30,9 +30,9 @@
 .keyframes(@name; @arguments) {
 	@-moz-keyframes @name { @arguments(); }
 	@-webkit-keyframes @name { @arguments(); }
-}
+}//declare keyframes w/ arg/parameters
 
 .animation(@arguments) {
 	-webkit-animation: @arguments;
     -moz-animation: @arguments;
-}
+}//declare animation class to pick animation props
