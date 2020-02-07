@@ -368,7 +368,6 @@ div.nav-head nav a {
 .home .content-pick .destination .btn:hover {
   -webkit-animation: color-fade 1s linear infinite alternate;
   -moz-animation: color-fade 1s linear infinite alternate;
-  animation: color-fade 1s linear infinite alternate;
 }
 @-moz-keyframes color-fade {
   0% {
@@ -380,15 +379,6 @@ div.nav-head nav a {
   }
 }
 @-webkit-keyframes color-fade {
-  0% {
-    background: #239db3;
-  }
-  100% {
-    background: #3cff00;
-    color: black;
-  }
-}
-@keyframes color-fade {
   0% {
     background: #239db3;
   }
