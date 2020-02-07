@@ -366,24 +366,32 @@ div.nav-head nav a {
   }
 }
 .home .content-pick .destination .btn:hover {
-  -webkit-animation: color-fade 1s linear infinite alternate;
-  -moz-animation: color-fade 1s linear infinite alternate;
+  -webkit-animation: color-fade 1.2s linear infinite alternate;
+  -moz-animation: color-fade 1.2s linear infinite alternate;
 }
 @-moz-keyframes color-fade {
   0% {
-    background: #239db3;
+    background: #25a2b8;
+  }
+  50% {
+    background: #04ff92;
+    color: #807a7a;
   }
   100% {
-    background: #3cff00;
+    background: #18dcbf;
     color: black;
   }
 }
 @-webkit-keyframes color-fade {
   0% {
-    background: #239db3;
+    background: #25a2b8;
+  }
+  50% {
+    background: #04ff92;
+    color: #807a7a;
   }
   100% {
-    background: #3cff00;
+    background: #18dcbf;
     color: black;
   }
 }
