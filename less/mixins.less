@@ -1,1 +1,38 @@
 // Mixins in here
+.flex() {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.txt-dec () {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.button() {
+    color: white;
+    font-size: 2rem;
+    background: #1D8080;
+    border-radius: 10px;
+    width: 85%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hover (@color, @radius) {
+    color: @color;
+    background: black;
+    border-radius: @radius;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+}//declare keyframes w/ arg/parameters
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+    -moz-animation: @arguments;
+}//declare animation class to pick animation props

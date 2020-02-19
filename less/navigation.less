@@ -1,1 +1,46 @@
 // Navigation Styles here
+div.nav-head {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    padding:3rem 0 0 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+        max-width: 500px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }//media
+
+    h1 {
+        justify-self: flex-start;
+        align-self: baseline;
+        margin-left: 4rem;
+
+        @media @mobile{
+            align-self: center;
+            margin: 1.5rem 0;
+        }//h1
+    }//h1
+
+    nav {
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+        align-self: baseline;
+        margin-right: 4rem;
+
+        @media @mobile {
+            width: 100%;
+            margin: 0;
+            
+        }//mobile
+
+        a {
+        .txt-dec();
+        }//a
+    }//nav
+}//nav-head
